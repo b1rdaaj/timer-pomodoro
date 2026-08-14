@@ -87,4 +87,63 @@ h1{
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
+    transition: all .2s ease-in;
 }
+
+.button.active, .button:hover{
+    background-color: #020323;
+}
+
+.hiden {
+    display: block;
+}
+
+.timer-display {
+    font-size: 5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+#start, #stop {
+    background-color: #2E325A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+#stop:hover {
+    background-color: tomato;
+}
+
+#start:hover {
+    background-color: #219A52;
+}
+
+#timer-message {
+    color: white;
+    background-color: red;
+    display: none;
+    padding: .5rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+/* responsivo /celular */
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .container {
+        transition: scale(0.9);
+    }
+    
+    .timer{
+    width: 500px;
+    }
+}
+
